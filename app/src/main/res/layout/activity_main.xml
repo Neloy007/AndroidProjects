@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/contactTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Contact"
+        android:textColor="#3F51B5"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <SearchView
+        android:id="@+id/searchSv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="25dp"
+        android:background="#FBFBFB"
+        android:iconifiedByDefault="false"
+
+
+
+        android:queryHint="Search name, number, etc."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactTv" />
+    <TextView
+        android:id="@+id/alphabateTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchSv"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contactContainer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/alphabateTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/nameTv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nazmul Alam Neloy"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:id="@+id/numberTv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="[+880] 15-68346525"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTv1"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/imageBtn2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop=".5dp"
+            android:background="@android:color/transparent"
+
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/neloy"
+            app:layout_constraintEnd_toStartOf="@+id/nameTv1"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contactContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/contactContainer1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/nameTv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nazmul Alam Neloy"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:id="@+id/numberTv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="[+880] 15-68346525"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTv2"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/imageBtn3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop=".5dp"
+            android:background="@android:color/transparent"
+
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/neloy"
+            app:layout_constraintEnd_toStartOf="@+id/nameTv2"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contactContainer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/contactContainer2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/nameTv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nazmul Alam Neloy"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:id="@+id/numberTv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="[+880] 15-68346525"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTv3"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/imageBtn4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop=".5dp"
+            android:background="@android:color/transparent"
+
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/neloy"
+            app:layout_constraintEnd_toStartOf="@+id/nameTv3"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contactContainer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/contactContainer3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/nameTv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nazmul Alam Neloy"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:id="@+id/numberTv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="[+880] 15-68346525"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTv4"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/imageBtn5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop=".5dp"
+            android:background="@android:color/transparent"
+
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/neloy"
+            app:layout_constraintEnd_toStartOf="@+id/nameTv4"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contactContainer5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/contactContainer4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/nameTv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nazmul Alam Neloy"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:id="@+id/numberTv6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="[+880] 15-68346525"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTv5"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/imageBtn6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop=".5dp"
+            android:background="@android:color/transparent"
+
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/neloy"
+            app:layout_constraintEnd_toStartOf="@+id/nameTv5"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contactContainer6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/contactContainer5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/nameTv6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nazmul Alam Neloy"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:id="@+id/numberTv7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="[+880] 15-68346525"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTv6"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/imageBtn7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop=".5dp"
+            android:background="@android:color/transparent"
+
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/neloy"
+            app:layout_constraintEnd_toStartOf="@+id/nameTv6"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contactContainer7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/contactContainer6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/nameTv7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nazmul Alam Neloy"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:id="@+id/numberTv8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="[+880] 15-68346525"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTv7"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/imageBtn8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop=".5dp"
+            android:background="@android:color/transparent"
+
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/neloy"
+            app:layout_constraintEnd_toStartOf="@+id/nameTv7"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contactContainer8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/contactContainer7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/nameTv8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nazmul Alam Neloy"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:id="@+id/numberTv9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="[+880] 15-68346525"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTv8"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/imageBtn9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop=".5dp"
+            android:background="@android:color/transparent"
+
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/neloy"
+            app:layout_constraintEnd_toStartOf="@+id/nameTv8"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contactContainer9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/contactContainer8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/nameTv9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nazmul Alam Neloy"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:id="@+id/numberTv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="[+880] 15-68346525"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTv9"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/imageBtn1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop=".5dp"
+            android:background="@android:color/transparent"
+
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/neloy"
+            app:layout_constraintEnd_toStartOf="@+id/nameTv9"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
